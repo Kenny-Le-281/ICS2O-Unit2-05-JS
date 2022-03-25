@@ -1,0 +1,17 @@
+/* Created by: Kenny Le
+ * Created on: Mar 2022
+ * This CSS file defines the style for index.html ICS20-Unit2-03-JS
+*/
+
+.mdl-layout__content {
+    padding-left: 15pt;
+    padding-right: 15pt;
+    padding-top: 15pt;
+  }
+  
+  p {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+  }
+  
