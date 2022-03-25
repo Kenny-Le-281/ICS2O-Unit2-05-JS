@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- ICS20-UnitX-YY-HTML-->
+<!-- ICS2O-Unit2-05-JS-->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8"
-    <meta name="description" content="Area, with JavaScript">
+    <meta name="description" content="Money, with JavaScript">
     <meta name="keywords" content="mths, ics2o">
     <meta name="author" content="Kenny Le">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,48 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Area, with JavaScript</title>
+    <title>Money, with JavaScript</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Salary Program, with JS</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <h4>Please enter your employment information:</h4>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="numbers-of-hours-worked">
+            <label class="mdl-textfield__label" for="numbers-of-hours-worked">Numbers Of Hours Worked</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hourly-rate">
+            <label class="mdl-textfield__label" for="hourly-rate">Hourly Rate ($)</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="pay()">
+          Pay
+        </button>
+        <br>
+        <br>
+        <p>
+          <div id="answers">
+            <div id="take-home-salary"></div>
+            <div id="government-tax"></div>
+          </div>
+        </p>
+      </main>
+    </div>
   </body>
 </html>
