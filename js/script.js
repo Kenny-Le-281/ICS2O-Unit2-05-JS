@@ -19,4 +19,4 @@ function pay () {
   // output
   document.getElementById('take-home-salary').innerHTML = 'Your pay will be: $' + takeHomeSalary.toFixed(2)
   document.getElementById('government-tax').innerHTML = 'The government will take: $' + governmentTax.toFixed(2)
-  }
+}
