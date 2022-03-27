@@ -4,8 +4,9 @@
 */
 
 'use strict'
+
 /**
- * This function calculates the area and perimeter of the rectangle.
+ * This function determines your pay.
  */
 function pay () {
   // input
