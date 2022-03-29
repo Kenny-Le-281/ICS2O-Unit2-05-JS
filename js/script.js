@@ -10,8 +10,8 @@
  */
 function pay () {
   // input
-  const numbersOfHoursWorked = parseInt(document.getElementById('numbers-of-hours-worked').value)
-  const hourlyRate = parseInt(document.getElementById('hourly-rate').value)
+  const numbersOfHoursWorked = parseFloat(document.getElementById('numbers-of-hours-worked').value)
+  const hourlyRate = parseFloat(document.getElementById('hourly-rate').value)
 
    // process
   const takeHomeSalary = (numbersOfHoursWorked * hourlyRate) * (1.00 - 0.18)
