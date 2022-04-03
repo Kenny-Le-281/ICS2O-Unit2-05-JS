@@ -10,13 +10,13 @@
  */
 function pay () {
   // input
-  const taxRate = 0.18;
+  const TAX_RATE = 0.18;
   const numbersOfHoursWorked = parseFloat(document.getElementById('numbers-of-hours-worked').value)
   const hourlyRate = parseFloat(document.getElementById('hourly-rate').value)
 
    // process
-  const takeHomeSalary = (numbersOfHoursWorked * hourlyRate) * (1.00 - taxRate)
-  const governmentTax = (numbersOfHoursWorked * hourlyRate) * taxRate
+  const takeHomeSalary = (numbersOfHoursWorked * hourlyRate) * (1.00 - TAX_RATE)
+  const governmentTax = (numbersOfHoursWorked * hourlyRate) * TAX_RATE
 
   // output
   document.getElementById('take-home-salary').innerHTML = 'Your pay will be: $' + takeHomeSalary.toFixed(2)
